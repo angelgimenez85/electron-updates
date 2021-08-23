@@ -1,0 +1,45 @@
+{
+  "name": "markdown-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=true electron .",
+    "build:macos": "electron-builder --macos --dir",
+    "dist:macos": "electron-builder --macos",
+    "publish:github": "build -p always",
+    "build:linux": "electron-builder --linux --dir",
+    "build:linux-deb": "electron-builder --x64 --linux deb",
+    "publish:github-linux": "electron-builder --x64 --linux AppImage",
+    "deploy": "electron-builder build --linux AppImage --publish always",
+    "dist:linux": "electron-builder --linux",
+    "build:windows": "electron-builder --win --dir",
+    "dist-windows": "electron-builder --win"
+  },
+  "keywords": ["editor", "marcado", "markdown", "desktop", "multiplataforma", "electron"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.0.0",
+    "electron-builder": "^22.11.7"
+  },
+  "build": {
+    "appId": "com.my.markdown-editor.id",
+    "linux": {
+      "category": "Utility"
+    },
+    "publish": {
+      "provider": "github",
+      "onwer": "angelgimenez85",
+      "repo": "electron-updates"
+    }
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.9",
+    "simplemde": "^1.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angelgimenez85/electron-updates.git"
+  }
+}
