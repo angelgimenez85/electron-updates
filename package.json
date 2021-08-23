@@ -1,6 +1,6 @@
 {
   "name": "markdown-editor",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,14 @@
     "build:windows": "electron-builder --win --dir",
     "dist-windows": "electron-builder --win"
   },
-  "keywords": ["editor", "marcado", "markdown", "desktop", "multiplataforma", "electron"],
+  "keywords": [
+    "editor",
+    "marcado",
+    "markdown",
+    "desktop",
+    "multiplataforma",
+    "electron"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
