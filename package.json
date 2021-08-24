@@ -16,14 +16,7 @@
     "build:windows": "electron-builder --win --dir",
     "dist-windows": "electron-builder --win"
   },
-  "keywords": [
-    "editor",
-    "marcado",
-    "markdown",
-    "desktop",
-    "multiplataforma",
-    "electron"
-  ],
+  "keywords": ["editor", "marcado", "markdown", "desktop", "multiplataforma", "electron"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
